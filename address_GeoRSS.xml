@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <channel>
+        <item>
+            <title>
+              東京都 東京駅
+            </title>
+            <description>
+              <![CDATA[東京都 東京駅]]>
+            </description>
+            <geo:lat>
+                35.681382
+            </geo:lat>
+            <geo:long>
+                139.766084
+            </geo:long>
+        </item>
+        <item>
+            <title>
+              東京都 二重橋前
+            </title>
+            <description>
+              <![CDATA[東京都 二重橋前]]>
+            </description>
+            <geo:lat>
+                35.680366
+            </geo:lat>
+            <geo:long>
+                139.761615
+            </geo:long>
+        </item>
+        <item>
+            <title>
+              東京都 銀座
+            </title>
+            <description>
+              <![CDATA[東京都 銀座]]>
+            </description>
+            <geo:lat>
+                35.671989
+            </geo:lat>
+            <geo:long>
+                139.763965
+            </geo:long>
+        </item>
+    </channel>
+</rss>
