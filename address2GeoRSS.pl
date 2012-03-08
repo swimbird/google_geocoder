@@ -41,10 +41,12 @@ EOS
   my $GeoXMLItems;
   while (my $address = <$fh>) {
     chomp $address;
-    my $json_res = GeoCall($address);
+    my @addressList = split /,/, $address;
+    my $json_res = GeoCall($addressList[0]);
 
     if($debug){
-      print $address, "\n";
+      print $addressList[0], "\n";
+      print $addressList[1], "\n";
       print $json_res->{status}, "\n";
       print $json_res->{results}[0]->{formatted_address}, "\n";
       print $json_res->{results}[0]->{geometry}->{location}->{lat}, "\n";
@@ -57,10 +59,10 @@ EOS
       $GeoXMLItem = << "EOS";
         <item>
             <title>
-              $address
+              $addressList[0]
             </title>
             <description>
-              <![CDATA[$address]]>
+              <![CDATA[$addressList[1]]]>
             </description>
             <geo:lat>
                 $json_res->{results}[0]->{geometry}->{location}->{lat}
